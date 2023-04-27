@@ -5,64 +5,84 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    android:gravity="center_vertical"
     tools:context=".LoginActivity">
 
     <TextView
+        android:layout_marginTop="130dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TANGEDCO"
-        android:gravity="center"
-        android:textSize="35dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="serif"
-        android:textColor="@color/white"/>
+        android:gravity="center"
+        android:text="TANGEDCO"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
 
     <LinearLayout
-
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/UserField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:startIconDrawable="@drawable/user_vector"
-
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="UserName">
+            android:hint="UserName"
+            android:padding="10dp"
+            app:startIconDrawable="@drawable/user_vector">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:inputType="text"
                 android:layout_height="wrap_content"
-                />
+                android:inputType="text" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/PassField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:startIconDrawable="@drawable/user_vector"
-
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Password">
+            android:layout_marginBottom="15dp"
+            android:hint="Password"
+            android:padding="10dp"
+            app:startIconDrawable="@drawable/user_vector">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:inputType="textPassword"
                 android:layout_height="wrap_content"
-                />
-
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Forget Password ?" />
+
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
 
+
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#E68B8B"
+            android:text="Sign In" />
+
+    </LinearLayout>
 </LinearLayout>
